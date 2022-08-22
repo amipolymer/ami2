@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ami Polymer Pvt Lmt</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!--  Text changing script   -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+</head>
+
+<body class="page-index">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <!-- <h1 class="d-flex align-items-center"></h1> -->
+        <img src="assets/img/logo__2_.png" alt="" >
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">Team</a></li>
+          <li><a href="">Blog</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href=" ">Contact</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <video autoplay muted loop id="myVideo">
+      <source src="assets/WebsiteVideo.mp4" type="video/mp4">
+    </video>
+    <style>
+      #myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+    </style>
+    <div class="container" >
+      
+      <canvas class='connecting-dots dotteed'></canvas>
+      <div class="row">
+        
+        <div class="col-xl-4">
+          
+          <h2 class="textclipper" data-attr="Specilised in" >Specilised in</h2>
+          <h2 data-aos="fade-up" ><div class="text-3 textsizedecrese" style="font-size: 32px;"><span class="typing" ></span></div></h2>
+
+          <!-- Changing text-->
+
+          <!-- TExt animation -->
+          <style>
+            .textclipper{
+  font-size: clamp(1em, 10vw, 10em);
+  position: relative;
+  color: #444;
+  white-space: nowrap;
+  padding-right: 5px;
+  text-transform: camelcase;
+}
+.textclipper:before{
+  padding-right: 5px;
+  color: #FFF;
+  content: attr(data-attr);
+  position: absolute;
+  white-space: nowrap;
+  text-transform: camelcase;
+  width: 100%;
+  overflow: hidden;
+  animation: anim 2s linear, blink 1s 2s linear infinite;
+  filter: drop-shadow(0 0 10px rgba(0, 68, 255, 0.4))
+    drop-shadow(0 0 20px rgba(255,255,255,0.2));
+    border-right: 2px solid #FFF;
+}
+
+@keyframes anim{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+@keyframes blink{
+  0%,33%,100%{
+    border-color: #325B96;
+  }
+  66%{
+    border-color: transparent;
+  }
+}
+          </style>
+
+          <script>$(document).ready(function(){
+            $(window).scroll(function(){
+                // sticky navbar on scroll script
+                if(this.scrollY > 20){
+                    $('.navbar').addClass("sticky");
+                }else{
+                    $('.navbar').removeClass("sticky");
+                }
+        
+                // scroll-up button show/hide script
+                if(this.scrollY > 500){
+                    $('.scroll-up-btn').addClass("show");
+                }else{
+                    $('.scroll-up-btn').removeClass("show");
+                }
+            });
+        
+          
+        
+            // typing text animation script
+            var typed = new Typed(".typing", {
+                strings: ["Pharma-Tubing", "Reinforced Hoses", "Tri-Clover Gasket", "Single-Use System"],
+                typeSpeed: 100,
+                backSpeed: 60,
+                loop: true
+            });
+        
+           
+           
+          
+        
+         
+          
+        });
+        </script>
+
+          <blockquote data-aos="fade-up" data-aos-delay="100">
+            <p>We endeavor to provide complete satisfaction to our esteemed clientele through superlative quality of components. All the products are manufactured in compliance with highest international standards. </p>
+          </blockquote>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="#about" class="btn-get-started">Get Started</a>
+            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+
+    <!-- services featured section -->
+     <!-- ======= Featured Services Section ======= -->
+     <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title"><a href="">WHO WE ARE</a></h4>
+              <p class="description">We take great pleasure to introduce us as a leading manufacturer of wide range of silicone rubber products.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">OUR PRODUCTS</a></h4>
+              <p class="description">We produce the best quality products in Silicone, FKM, EPDM, Nitrile, Neoprene, TPE and PTFE material.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">WORK WITH US</a></h4>
+              <p class="description">We are open to talent who are enthusiastic, opportunistic and are passion-driven outdo. 
+                </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">QUICK ENQUIRIES</a></h4>
+              <p class="description">We're always open to listen and offer you the best solution. Connect with us today!
+            
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Featured Services Section -->
+
+    <!-- ======= Why Choose Us Section ======= -->
+    <!-- <section id="why-us" class="why-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+   
+
+        </div>
+
+        <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-xl-5 img-bg" style="background-image: url('assets/img/why-us-bg.jpg')"></div>
+
+          <div class="col-xl-7 slides  position-relative">
+
+            <div class="slides-1 swiper">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <h3 class="mb-3">Who Are We</h3>
+               
+                    <p>We take great pleasure to introduce us as a leading manufacturer of wide range of silicone rubber products.</p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <h3 class="mb-3">Our Products</h3>
+                
+                    <p>We produce the best quality products in Silicone, FKM, EPDM, Nitrile, Neoprene, TPE and PTFE material.</p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <h3 class="mb-3">Work with us</h3>
+                  
+                    <p>Let's Work Together and Explore Opportunities.</p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <h3 class="mb-3">Quck Enquiries</h3>
+                   
+                    <p>We are always happy to help. Get in touch with us today!</p>
+                  </div>
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+ -->
+
+    <!-- Floating card section -->
+    <div class="Floatingcards">
+      <br>
+    <h3>Our Products</h3>
+    <br>
+    <div class="flip">
+        <div class="front" style="background-image: url('assets/img/home_product_images/TricloverGaskets.jpg')">
+           <!-- <h3 class="text-shadow">Gasket</h3> -->
+        </div>
+        <div class="back">
+           <h3>Gasket</h3>
+           <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+        </div>
+    </div>
+    <div class="flip">
+        <div class="front" style="background-image: url('assets/img/home_product_images/Hose.jpg')">
+           <!-- <h3 class="text-shadow">Hoses</h3> -->
+        </div>
+        <div class="back">
+           <h3>Hoses</h3>
+           <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+        </div>
+    </div>
+    <div class="flip">
+        <div class="front" style="background-image: url('assets/img/home_product_images/Imaseal.jpg')">
+           <!-- <h3 class="text-shadow">Infla-Gasket</h3> -->
+        </div>
+        <div class="back">
+           <h3>Infla-Gasket</h3>
+           <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+        </div>
+    </div>
+
+  
+    
+   
+     
+    <!-- <h4>Vertical Flip</h4> -->
+    <div class="flip flip-vertical">
+        <div class="front" style="background-image: url('assets/img/home_product_images/menstrual-cup.jpg')">
+           <!-- <h3 class="text-shadow">Menstrual Cup</h3> -->
+        </div>
+        <div class="back">
+           <h3>Menstrual Cup</h3>
+           <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+        </div>
+    </div>
+    <div class="flip flip-vertical">
+        <div class="front" style="background-image: url('assets/img/home_product_images/Imaflow.jpg')">
+           <!-- <h3 class="text-shadow">Pharma Tubing</h3> -->
+        </div>
+        <div class="back">
+           <h3>Pharma Tubing</h3>
+           <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+        </div>
+    </div>
+    <div class="flip flip-vertical">
+        <div class="front" style="background-image: url('assets/img/home_product_images/sieves.jpg')">
+           <!-- <h3 class="text-shadow">Sieves</h3> -->
+        </div>
+        <div class="back">
+           <h3>Sieves</h3>
+           <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+        </div>
+    </div>
+
+    <div class="flip flip-vertical">
+      <div class="front" style="background-image: url('assets/img/home_product_images/sus.jpg')">
+         <!-- <h3 class="text-shadow">SUS</h3> -->
+      </div>
+      <div class="back">
+         <h3>SUS</h3>
+         <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+      </div>
+  </div>
+
+  <div class="flip flip-vertical">
+    <div class="front" style="background-image: url('assets/img/home_product_images/Sleevess.jpg')">
+       <!-- <h3 class="text-shadow">Sleeves</h3> -->
+    </div>
+    <div class="back">
+       <h3>Sleeves</h3>
+       <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+    </div>
+</div>
+
+
+    </div>
+
+    <style>
+
+      .Floatingcards{
+        color: #555;
+  background: rgb(255, 255, 255);
+  text-align: center;
+  font-family: 'Roboto Mono';
+  padding: 1em;
+      }
+
+      .flip {
+  position: relative;
+}
+
+.flip > .front,
+.flip > .back {
+  display: block;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+}
+
+.flip > .front {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.flip > .back {
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.flip:hover > .front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.flip:hover > .back {
+  opacity: 1;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.flip.flip-vertical > .back {
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+
+.flip.flip-vertical:hover > .front {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.flip.flip-vertical:hover > .back {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+
+.flip {
+  position: relative;
+  display: inline-block;
+  margin-right: 2px;
+  margin-bottom: 1em;
+  width: 300px;
+}
+
+.flip > .front,
+.flip > .back {
+  display: block;
+  color: white;
+  width: inherit;
+  background-size: cover !important;
+  background-position: center !important;
+  height: 200px;
+  padding: 1em 2em;
+  background: #313131;
+  border-radius: 10px;
+}
+
+.flip > .front p,
+.flip > .back p {
+  font-size: 0.9125rem;
+  line-height: 160%;
+  color: #999;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+}
+/*# sourceMappingURL=css.css.map */
+    </style>
+
+
+
+  <!-- ======= Our Services Section ======= -->
+  <section id="services-list" class="services-list">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-header">
+        <h2>Industries We Serve</h2>
+
+      </div>
+
+      <div class="row gy-5">
+
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+          <!-- <div class="icon flex-shrink-0"><i class="bi bi-briefcase" style="color: #f57813;"></i></div> -->
+          <img src="assets/img/icons/food.png" height="60px" width="60px">
+          <div>
+            <h4 class="title"><a href="#" class="stretched-link">FOOD & BEVERAGE</a></h4>
+            <p class="description">We produce food grade silicone products which are generally accepted as chemically stable and safe for use in food and beverage processing</p>
+          </div>
+        </div>
+        <!-- End Service Item -->
+
+      
+
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+          <!-- <div class="icon flex-shrink-0"><i class="bi bi-bar-chart" style="color: #d90769;"></i></div> -->
+          <img src="assets/img/icons/Biotech.png" height="60px" width="60px">
+          <div>
+            <h4 class="title"><a href="#" class="stretched-link">BIOPHARMA</a></h4>
+            <p class="description">APPL’s silicone products are an excellent choice in  biopharmaceutical industries due to its durability, wide useful temperature range, chemical inertness.</p>
+            <!-- high tensile strength, vast range of available durometers, low toxicity, and compatibility with many sterilization methods.-->
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+          <!-- <div class="icon flex-shrink-0"><i class="bi bi-binoculars" style="color: #15bfbc;"></i></div> -->
+          <img src="assets/img/icons/Medical.png" height="60px" width="60px">
+
+          <div>
+            <h4 class="title"><a href="#" class="stretched-link">MEDICAL</a></h4>
+            <p class="description">We provide 100% medical grade silicone products which are generally used in healthcare, cosmetics, dental, ophthalmic and gastroenterology sector with good biocompatibility </p>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+          <!-- <div class="icon flex-shrink-0"><i class="bi bi-brightness-high" style="color: #f5cf13;"></i></div> -->
+          <img src="assets/img/icons/Engeenring.png" height="60px" width="60px">
+
+          <div>
+            <h4 class="title"><a href="#" class="stretched-link">ENGINEERING</a></h4>
+            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+         
+
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+          <!-- <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week" style="color: #1335f5;"></i></div> -->
+          <img src="assets/img/icons/psu.png" height="60px" width="60px">
+
+          <div>
+            <h4 class="title"><a href="#" class="stretched-link">PUBLIC SECTOR UNITS</a></h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+          </div>
+        </div><!-- End Service Item -->
+
+
+
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+          <!-- <div class="icon flex-shrink-0"><i class="bi bi-bar-chart" style="color: #d90769;"></i></div> -->
+          <img src="assets/img/icons/electrical.png" height="60px" width="60px">
+
+          <div>
+            <h4 class="title"><a href="#" class="stretched-link">ELECTRICAL</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+          <!-- <div class="icon flex-shrink-0"><i class="bi bi-binoculars" style="color: #15bfbc;"></i></div> -->
+          <img src="assets/img/icons/chemical.png" height="60px" width="60px">
+
+          <div>
+            <h4 class="title"><a href="#" class="stretched-link">CHEMICAL</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+          <!-- <div class="icon flex-shrink-0"><i class="bi bi-brightness-high" style="color: #f5cf13;"></i></div> -->
+          <img src="assets/img/icons/navy.png" height="60px" width="60px">
+
+          <div>
+            <h4 class="title"><a href="#" class="stretched-link">DEFENCE & NAVY</a></h4>
+            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+          <!-- <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week" style="color: #1335f5;"></i></div> -->
+          <img src="assets/img/icons/plastic.png" height="60px" width="60px">
+
+          <div>
+            <h4 class="title"><a href="#" class="stretched-link">PLASTICS</a></h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+          </div>
+        </div><!-- End Service Item -->
+
+
+
+
+      </div>
+
+    </div>
+  </section><!-- End Our Services Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <!-- <section id="call-to-action" class="call-to-action">
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h3>Connect With Us</h3>
+            <p>Connect with us on LinkedIn to stay updated on our latest news and events, as well as upcoming exhibitions and initiatives.</p>
+            <a class="cta-btn" href="#">Join Us on linkedin</a>
+          </div>
+        </div>
+
+      </div>
+    </section>= -->
+
+
+
+     <section id="call-to-action" class="call-to-action">
+  <div class="container text-center" data-aos="zoom-out">
+    <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+    <h3>Why Choose Us</h3>
+    <p> Ami Polymer Pvt. Ltd. is one of the leading manufacturers and suppliers of silicone-based products & single-use assemblies in India.
+We Are Experts in Silicone Tubing, Hoses & Single-Use Assemblies.
+Our company has been acclaimed for quality and excellence in the range of products offered. We have committed ourselves to deliver only the finest products to our clients.
+</p>
+    <a class="cta-btn" href="#">Read More</a>
+  </div>
+
+
+  <!-- Numbers increasing section  -->
+
+ <!-- ======= Counts Section ======= -->
+ <section id="counts" class="counts">
+  <div class="container" data-aos="fade-up">
+
+    <div class="row">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="count-box">
+          <i class="bi bi-emoji-smile"></i>
+          <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter">1000+</span>
+          <p style="color: #0D0D0D">Happy Clients</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+        <div class="count-box">
+          <i class="bi bi-journal-richtext"></i>
+          <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter">22+</span>
+          <p style="color: #0D0D0D">Projects</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+        <div class="count-box">
+          <i class="bi bi-headset"></i>
+          <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter">20+</span>
+          <p style="color: #0D0D0D">Hours Of Support</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+        <div class="count-box">
+          <i class="bi bi-people"></i>
+          <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter">600+</span>
+          <p style="color: #0D0D0D">Employees</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Counts Section -->
+
+    <!--Facts css-->
+
+    <style>
+  /*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+.counts {
+  padding: 70px 0 60px;
+}
+
+.counts .count-box {
+  padding: 30px 30px 25px 30px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background: #f1f6fe;
+}
+
+.counts .count-box i {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  background: #106eea;
+  color: #fff;
+  width: 56px;
+  height: 56px;
+  line-height: 0;
+  border-radius: 50px;
+  border: 5px solid #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counts .count-box span {
+  font-size: 36px;
+  display: block;
+  font-weight: 600;
+  color: #062b5b;
+}
+
+.counts .count-box p {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+</style>
+
+
+
+
+</section>
+
+
+
+
+
+
+<!-- Who we are section -->
+
+ <!-- ======= Call To Action Section ======= -->
+ <!-- <section id="call-to-action" class="call-to-action">
+  <div class="container text-center" data-aos="zoom-out">
+    <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+    <h3>Call To Action</h3>
+    <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <a class="cta-btn" href="#">Call To Action</a>
+  </div>
+</section> -->
+
+
+
+<!-- End Call To Action Section -->
+
+
+
+    <!-- ======= Features Section ======= -->
+  <section id="features" class="features">
+
+      <div class="details" style="
+      margin-top: 0px;
+  ">
+        <center>
+        <div class="container" data-aos="fade-up" data-aos-delay="300">
+          <!-- <div class="row"> -->
+            <div class="col-md-6">
+         
+              <h3>Connect With Us</h3>
+              <p>Connect with us on LinkedIn to stay updated on our latest news and events, as well as upcoming exhibitions and initiatives.</p>
+              <a href="https://www.linkedin.com/in/amipolymerindia/" class="btn-get-started">Join Us on linkedin</a>
+            
+            </div>
+          <!-- </div> -->
+
+        </div>
+      </center>
+      
+      </div>
+   
+    </section><!-- End Features Section -->
+
+
+
+    <!-- OUr Clients  -->
+
+        <!-- ======= Clients Section ======= -->
+        <section id="clients" class="clients">
+          <div class="container" data-aos="zoom-out">
+            
+            <div class="section-title">
+              <center><h2>Our Clients</h2></center>
+              <br>
+              
+            </div>
+    
+            <div class="clients-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide"><img src="assets/img/clients/01-01.png" class="img-fluid" alt="" style="max-width: 200px;"></div>
+                <div class="swiper-slide"><img src="assets/img/clients/01-02.png" class="img-fluid" alt="" style="max-width: 200px;"></div>
+                <div class="swiper-slide"><img src="assets/img/clients/01-03.png" class="img-fluid" alt="" style="max-width: 200px;"></div>
+                <div class="swiper-slide"><img src="assets/img/clients/01-04.png" class="img-fluid" alt="" style="max-width: 200px;"></div>
+                <div class="swiper-slide"><img src="assets/img/clients/01-05.png" class="img-fluid" alt="" style="max-width: 200px;"></div>
+                <div class="swiper-slide"><img src="assets/img/clients/01-06.png" class="img-fluid" alt="" style="max-width: 200px;"></div>
+                <div class="swiper-slide"><img src="assets/img/clients/01-07.png" class="img-fluid" alt="" style="max-width: 200px;"></div>
+                <div class="swiper-slide"><img src="assets/img/clients/01-08.png" class="img-fluid" alt="" style="max-width: 200px;"></div>
+                <div class="swiper-slide"><img src="assets/img/clients/01-09.png" class="img-fluid" alt="" style="max-width: 200px;"></div>
+                <div class="swiper-slide"><img src="assets/img/clients/01-10.png" class="img-fluid" alt="" style="max-width: 200px;"></div>
+                <div class="swiper-slide"><img src="assets/img/clients/01-11.png" class="img-fluid" alt="" style="max-width: 200px;"></div>
+                <div class="swiper-slide"><img src="assets/img/clients/01-12.png" class="img-fluid" alt="" style="max-width: 200px;"></div>
+                <div class="swiper-slide"><img src="assets/img/clients/01-13.png" class="img-fluid" alt="" style="max-width: 200px;"></div>
+                <div class="swiper-slide"><img src="assets/img/clients/01-14.png" class="img-fluid" alt="" style="max-width: 200px;"></div>
+                <div class="swiper-slide"><img src="assets/img/clients/01-15.png" class="img-fluid" alt="" style="max-width: 200px;"></div>
+                <div class="swiper-slide"><img src="assets/img/clients/01-16.png" class="img-fluid" alt="" style="max-width: 200px;"></div>
+                <div class="swiper-slide"><img src="assets/img/clients/01-17.png" class="img-fluid" alt="" style="max-width: 200px;"></div>
+                <div class="swiper-slide"><img src="assets/img/clients/01-18.png" class="img-fluid" alt="" style="max-width: 200px;"></div>
+                <div class="swiper-slide"><img src="assets/img/clients/01-19.png" class="img-fluid" alt="" style="max-width: 200px;"></div>
+                <div class="swiper-slide"><img src="assets/img/clients/01-20.png" class="img-fluid" alt="" style="max-width: 200px;"></div>
+              </div>
+            </div>
+    
+          </div>
+        </section><!-- End Clients Section -->
+
+
+
+        <!-- clients second section -->
+
+            <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container">
+
+        <div class="section-title">
+          <center><h2>Certifications</h2></center>
+          <br>
+          
+        </div>
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/certificates/01.png" class="img-fluid" alt="" > </div>
+            <div class="swiper-slide"><img src="assets/img/certificates/02.png" class="img-fluid" alt="" ></div>
+            <div class="swiper-slide"><img src="assets/img/certificates/03.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/certificates/04.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/certificates/05.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/certificates/06.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/certificates/07.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/certificates/08.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+
+    <!--   ISO14001 – EMS    ISO45001 – Health and safety     NSF 51 –Certified products      USP class VI Certified products -->
+    <!--   ISO 13485:2016     ISO9001 – QMS        FDA approved         ISO27001 – ISMS     -->
+
+        <!-- ======= Testimonials Section ======= -->
+        <section id="testimonials" class="testimonials">
+          <div class="container" data-aos="fade-up">
+    
+            <div class="section-header">
+              <h2>Testimonials</h2>
+              <p>Voluptatem quibusdam ut ullam perferendis repellat non ut consequuntur est eveniet deleniti fignissimos eos quam</p>
+            </div>
+    
+            <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+              <div class="swiper-wrapper">
+    
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <div class="d-flex align-items-center">
+                        <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Saul Goodman</h3>
+                          <h4>Ceo &amp; Founder</h4>
+                          <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+    
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <div class="d-flex align-items-center">
+                        <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Sara Wilsson</h3>
+                          <h4>Designer</h4>
+                          <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+    
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <div class="d-flex align-items-center">
+                        <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Jena Karlis</h3>
+                          <h4>Store Owner</h4>
+                          <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+    
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <div class="d-flex align-items-center">
+                        <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Matt Brandon</h3>
+                          <h4>Freelancer</h4>
+                          <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore.
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+    
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <div class="d-flex align-items-center">
+                        <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>John Larson</h3>
+                          <h4>Entrepreneur</h4>
+                          <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore.
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+    
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+    
+          </div>
+        </section><!-- End Testimonials Section -->
+    
+
+
+
+
+    <!-- ======= Recent Blog Posts Section ======= -->
+    <section id="recent-posts" class="recent-posts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Recent Blog Posts</h2>
+
+        </div>
+
+        <div class="row gy-5">
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="post-box">
+              <div class="post-img"><img src="assets/img/blog/Howtochoosebestfit.jpg" class="img-fluid" alt=""></div>
+              <div class="meta">
+                <span class="post-date">Tue, December 12</span>
+                <span class="post-author"> / Chandan Shah</span>
+              </div>
+              <h3 class="post-title">How to choose best fit for peristaltic pump!!</h3>
+              <p>A lot of equipment around us uses the mechanisms of pump, from the smallest Pump used house hold to the large scale of the industries.</p>
+              <a href="" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="post-box">
+              <div class="post-img"><img src="assets/img/blog/deliveringexcellence.jpg" class="img-fluid" alt=""></div>
+              <div class="meta">
+                <span class="post-date">Fri, September 05</span>
+                <span class="post-author"> / Pravin Mange</span>
+              </div>
+              <h3 class="post-title">Delivering Excellence With Its High-End Packaging</h3>
+              <p>Today, Food and Pharma grade rubber products have become indispensable parts of the manufacturing and packaging of food and medicines.</p>
+              <a href="" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="post-box">
+              <div class="post-img"><img src="assets/img/blog/imasafeblog.jpg" class="img-fluid" alt=""></div>
+              <div class="meta">
+                <span class="post-date">Tue, July 27</span>
+                <span class="post-author"> / Darshan Gandhi</span>
+              </div>
+              <h3 class="post-title">CUP YOURSELF WITH CARE AND COMFORT!</h3>
+              <p>IMASAFE™ REUSABLE MENSTRUAL CUP- CUP YOURSELF WITH CARE AND COMFORT! BUT we are living in 21st century </p>
+              <a href="" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="post-box">
+              <div class="post-img"><img src="assets/img/blog/flurocentrc.jpg" class="img-fluid" alt=""></div>
+              <div class="meta">
+                <span class="post-date">Tue, Sep 16</span>
+                <span class="post-author"> / Yash Hudia</span>
+              </div>
+              <h3 class="post-title">FLUORESCENT RC SILICONE NITRO GLOW FUEL LINE TUBING</h3>
+              <p>Ami Polymer Pvt. Ltd. are launching a variant of Fluorosilicone tube with its end application as a fuel transfer tube in RC Nitro cars.</p>
+              <a href="" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Recent Blog Posts Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span>Ami Polymer</span>
+            </a>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <div class="social-links d-flex  mt-3">
+              <a href="https://twitter.com/amipolymerindia" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.facebook.com/amipolymerpvtltd" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/amipolymer/" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/amipolymerindia/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><i class="bi bi-dash"></i> <a href="#">Home</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">About us</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Clientele</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Reseach & Development</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">News & Events</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Career</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Privacy Policy</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Specilised Product</h4>
+            <ul>
+              <li><i class="bi bi-dash"></i> <a href="#">Tubing</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Hoses</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Tri-Clamp Sanitary Gaskets</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Single Use Assemblies System</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Inflatable Seals</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">O-Rings</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Extruded Profiles</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Cords</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+             
+Corporate Office: Plot No. 66-D/E, Govt. Induatrial Estate, Near Beekaylon Factory, Masat, Silvassa - 396230. Dadra & Nagar Haveli. Gujarat. INDIA  <br> 
+              <strong>Phone:</strong> (+91) 9223411447 / 9223290943<br>
+              <strong>Email:</strong> info@amipolymer.com<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Amipolymer 2022</span></strong>. All Rights Reserved
+        </div>
+
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Clients dependency -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Numbers increasing section -->
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
